@@ -74,38 +74,40 @@ const Header: NextPage<Props> = () => {
 
   return (
     <Element name="home">
-      <header className="w-full fixed bg-gray-800 opacity-80 flex justify-between items-center p-4 border-b border-opacity-10">
-        <div
-          onClick={toggleTheme}
-          className="w-10 h-5 bg-green-700 rounded-full shadow-inner p-0.5"
-        >
+      <header className="w-full fixed top-0 left-0 bg-gray-800 opacity-80 border-b border-opacity-10">
+        <div className="max-w-screen-2xl flex justify-between items-center m-auto p-4">
           <div
-            className={`bg-gray-500 w-4 h-4 rounded-full transform transition-all duration-300 ${
-              darkMode
-                ? "translate-x-5 bg-yellow-400"
-                : "translate-x-0 bg-blue-400"
-            }`}
-          ></div>
+            onClick={toggleTheme}
+            className="w-10 h-5 bg-green-700 rounded-full shadow-inner p-0.5"
+          >
+            <div
+              className={`bg-gray-500 w-4 h-4 rounded-full transform transition-all duration-300 ${
+                darkMode
+                  ? "translate-x-5 bg-yellow-400"
+                  : "translate-x-0 bg-blue-400"
+              }`}
+            ></div>
+          </div>
+          <nav className="md:flex items-center">
+            <ul className="flex justify-between items-center w-full">
+              {navigation.map(({ id, path, title, to }) => (
+                <li key={id}>
+                  <Link
+                    activeClass="active"
+                    to={to}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="transition-all text-gray-100 font-semibold inline-block py-3 px-2 border-b-2 border-transparent hover:text-white hover:border-white cursor-pointer"
+                  >
+                    {title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
-        <nav className="md:flex items-center">
-          <ul className="flex justify-between items-center w-full">
-            {navigation.map(({ id, path, title, to }) => (
-              <li key={id}>
-                <Link
-                  activeClass="active"
-                  to={to}
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="transition-all text-gray-100 font-semibold inline-block py-3 px-2 border-b-2 border-transparent hover:text-white hover:border-white cursor-pointer"
-                >
-                  {title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
       </header>
     </Element>
   );

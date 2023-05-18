@@ -28,7 +28,7 @@ const ContactForm: NextPage = () => {
     >
       <h2 className="text-2xl font-bold mb-6">Зворотній звя`зок</h2>
 
-      <div className="mb-4">
+      <div className="mb-4 relative">
         <label htmlFor="name" className="block mb-2 font-semibold">
           Ім`я
         </label>
@@ -41,11 +41,13 @@ const ContactForm: NextPage = () => {
           }`}
         />
         {errors.name && (
-          <span className="text-red-500 text-sm">{errors.name.message}</span>
+          <span className="text-red-500 text-sm absolute top-[74px] left-0">
+            {errors.name.message}
+          </span>
         )}
       </div>
 
-      <div className="mb-4">
+      <div className="mb-4 relative">
         <label htmlFor="phone" className="block mb-2 font-semibold">
           Телефон
         </label>
@@ -58,11 +60,13 @@ const ContactForm: NextPage = () => {
           }`}
         />
         {errors.phone && (
-          <span className="text-red-500 text-sm">{errors.phone.message}</span>
+          <span className="text-red-500 text-sm absolute top-[74px] left-0">
+            {errors.phone.message}
+          </span>
         )}
       </div>
 
-      <div className="mb-4">
+      <div className="mb-4 relative">
         <label htmlFor="email" className="block mb-2 font-semibold">
           Електронна пошта
         </label>
@@ -81,11 +85,13 @@ const ContactForm: NextPage = () => {
           }`}
         />
         {errors.email && (
-          <span className="text-red-500 text-sm">{errors.email.message}</span>
+          <span className="text-red-500 text-sm absolute top-[74px] left-0">
+            {errors.email.message}
+          </span>
         )}
       </div>
 
-      <div className="mb-4">
+      <div className="mb-4 relative">
         <input
           type="checkbox"
           id="agree"
@@ -96,7 +102,9 @@ const ContactForm: NextPage = () => {
           Приймаю умови
         </label>
         {errors.agree && (
-          <span className="text-red-500 text-sm">{errors.agree.message}</span>
+          <span className="text-red-500 text-sm absolute top-[20px] left-0">
+            {errors.agree.message}
+          </span>
         )}
       </div>
       <button

@@ -6,11 +6,11 @@ interface Props {}
 
 const DishMenu: NextPage<Props> = () => {
   return (
-    <Element name="about">
-      <section className="py-20 flex flex-col items-center">
+    <Element className="m-auto px-8" name="about">
+      <section className="py-20 flex flex-col justify-center items-center">
         <h2 className="text-gray-200 text-4xl text-center">Dish Of The Day</h2>
-        <ul className="m-auto p-5 flex flex-wrap justify-center gap-8 mt-10">
-          <li className="max-w-sm flex flex-col justify-center items-center w-[350px] overflow-hidden">
+        <ul className="m-auto flex flex-wrap justify-center gap-8 mt-10">
+          <li className="max-w-[350px] flex flex-col justify-center items-center overflow-hidden">
             <Image
               className="rounded-t-md"
               src="/images/placeholder1.jpg"
@@ -30,7 +30,7 @@ const DishMenu: NextPage<Props> = () => {
               </p>
             </div>
           </li>
-          <li className="max-w-sm flex flex-col justify-center items-center w-[350px] overflow-hidden">
+          <li className="max-w-[350px] flex flex-col justify-center items-center  overflow-hidden">
             <div>
               <Image
                 className="rounded-t-md"
@@ -51,7 +51,7 @@ const DishMenu: NextPage<Props> = () => {
               </p>
             </div>
           </li>
-          <li className="max-w-sm flex flex-col justify-center items-center w-[350px] overflow-hidden">
+          <li className="max-w-[350px] flex flex-col justify-center items-center  overflow-hidden">
             <div>
               <Image
                 className="rounded-t-md"
@@ -72,7 +72,7 @@ const DishMenu: NextPage<Props> = () => {
               </p>
             </div>
           </li>
-          <li className="max-w-sm flex flex-col justify-center items-center w-[350px] overflow-hidden">
+          <li className="max-w-[350px] flex flex-col justify-center items-center  overflow-hidden">
             <div>
               <Image
                 className="rounded-t-md"
@@ -93,7 +93,7 @@ const DishMenu: NextPage<Props> = () => {
               </p>
             </div>
           </li>
-          <li className="max-w-sm flex flex-col justify-center items-center w-[350px] overflow-hidden">
+          <li className="max-w-[350px] flex flex-col justify-center items-center  overflow-hidden">
             <div>
               <Image
                 className="rounded-t-md"
@@ -114,7 +114,7 @@ const DishMenu: NextPage<Props> = () => {
               </p>
             </div>
           </li>
-          <li className="max-w-sm flex flex-col justify-center items-center w-[350px] overflow-hidden">
+          <li className="max-w-[350px] flex flex-col justify-center items-center  overflow-hidden">
             <div>
               <Image
                 className="rounded-t-md"

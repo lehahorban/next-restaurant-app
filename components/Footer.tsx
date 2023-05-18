@@ -5,8 +5,8 @@ interface Props {}
 
 const Footer: NextPage<Props> = () => {
   return (
-    <Element name="contacts">
-      <footer className="flex flex-col items-center py-10 bg-gray-900">
+    <Element className="w-full m-auto" name="contacts">
+      <footer className="w-full flex flex-col items-center py-10 px-8 bg-gray-900">
         <div className="border-b-2 flex flex-col items-center w-full pb-10">
           <ul className="flex flex-wrap justify-center gap-12 w-3/4">
             <li className="flex flex-col items-center">
@@ -78,7 +78,7 @@ const Footer: NextPage<Props> = () => {
         </div>
         <div className="flex flex-col items-center pt-10">
           <p className="text-green-500 text-base">HEALTHY SWITCHER</p>
-          <p className="text-gray-400">
+          <p className="text-gray-400 text-center">
             © Designed by Yellow Snow. All Rights Reserved.{" "}
           </p>
         </div>
