@@ -1,5 +1,7 @@
 import { NextPage } from "next";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 type FormData = {
   name: string;
@@ -18,17 +20,18 @@ const ContactForm: NextPage = () => {
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     console.log(data);
+    toast.success("Ваше повідомлення відправлено");
     reset();
   };
 
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="max-w-md mx-auto p-6 mt-10 bg-white rounded-lg shadow-lg"
+      className="max-w-[440px] mx-auto p-6 mt-10 bg-white rounded-lg shadow-lg"
     >
       <h2 className="text-2xl font-bold mb-6">Зворотній звя`зок</h2>
 
-      <div className="mb-4 relative">
+      <div className="mb-4 relative py-1">
         <label htmlFor="name" className="block mb-2 font-semibold">
           Ім`я
         </label>
@@ -41,13 +44,13 @@ const ContactForm: NextPage = () => {
           }`}
         />
         {errors.name && (
-          <span className="text-red-500 text-sm absolute top-[74px] left-0">
+          <span className="text-red-500 text-sm absolute top-20 left-0">
             {errors.name.message}
           </span>
         )}
       </div>
 
-      <div className="mb-4 relative">
+      <div className="mb-4 relative py-1">
         <label htmlFor="phone" className="block mb-2 font-semibold">
           Телефон
         </label>
@@ -60,13 +63,13 @@ const ContactForm: NextPage = () => {
           }`}
         />
         {errors.phone && (
-          <span className="text-red-500 text-sm absolute top-[74px] left-0">
+          <span className="text-red-500 text-sm absolute top-20 left-0">
             {errors.phone.message}
           </span>
         )}
       </div>
 
-      <div className="mb-4 relative">
+      <div className="mb-4 relative py-1">
         <label htmlFor="email" className="block mb-2 font-semibold">
           Електронна пошта
         </label>
@@ -85,13 +88,13 @@ const ContactForm: NextPage = () => {
           }`}
         />
         {errors.email && (
-          <span className="text-red-500 text-sm absolute top-[74px] left-0">
+          <span className="text-red-500 text-sm absolute top-20 left-0">
             {errors.email.message}
           </span>
         )}
       </div>
 
-      <div className="mb-4 relative">
+      <div className="mb-4 relative py-1">
         <input
           type="checkbox"
           id="agree"
@@ -102,7 +105,7 @@ const ContactForm: NextPage = () => {
           Приймаю умови
         </label>
         {errors.agree && (
-          <span className="text-red-500 text-sm absolute top-[20px] left-0">
+          <span className="text-red-500 text-sm absolute top-6 left-0">
             {errors.agree.message}
           </span>
         )}

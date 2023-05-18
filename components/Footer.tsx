@@ -6,7 +6,7 @@ interface Props {}
 const Footer: NextPage<Props> = () => {
   return (
     <Element className="w-full m-auto" name="contacts">
-      <footer className="w-full flex flex-col items-center py-10 px-8 bg-gray-900">
+      <footer className="flex flex-col items-center py-10 px-8 bg-gray-900">
         <div className="border-b-2 flex flex-col items-center w-full pb-10">
           <ul className="flex flex-wrap justify-center gap-12 w-3/4">
             <li className="flex flex-col items-center">
