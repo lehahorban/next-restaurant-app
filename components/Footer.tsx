@@ -1,9 +1,7 @@
 import { NextPage } from "next";
 import { Element } from "react-scroll";
 
-interface Props {}
-
-const Footer: NextPage<Props> = () => {
+const Footer: NextPage = () => {
   return (
     <Element className="w-full m-auto" name="contacts">
       <footer className="flex flex-col items-center py-10 px-8 bg-gray-900">

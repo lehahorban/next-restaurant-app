@@ -3,9 +3,7 @@ import Image from "next/image";
 import Header from "./Header";
 import Hero from "./Hero";
 
-interface Props {}
-
-const Layout: NextPage<Props> = () => {
+const Layout: NextPage = () => {
   return (
     <div className="relative">
       <div className="absolute left-0 top-0 w-full h-full">

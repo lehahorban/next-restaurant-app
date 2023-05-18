@@ -1,9 +1,7 @@
 import { NextPage } from "next";
 import { useRouter } from "next/router";
 
-interface Props {}
-
-const Hero: NextPage<Props> = () => {
+const Hero: NextPage = () => {
   const router = useRouter();
 
   const navigateContacts = () => {
@@ -22,7 +20,7 @@ const Hero: NextPage<Props> = () => {
       </p>
       <button
         onClick={navigateContacts}
-        className="mt-10 w-48 h-10 sm:w-52 sm:h-12 md:w-56 md:h-16 bg-green-700 text-center text-black text-base sm:text-lg md:text-xl font-bold rounded-[43px] hover:bg-green-500 hover:text-xl"
+        className="mt-10 w-48 h-14 sm:w-52 sm:h-14 md:w-48 md:h-16 bg-green-700 text-center text-white text-base sm:text-lg md:text-lg rounded-[43px] hover:bg-green-600"
       >
         Залишити заявку
       </button>

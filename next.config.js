@@ -1,10 +1,3 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-// };
-
-// module.exports = nextConfig;
-
 module.exports = {
   webpack(config) {
     // Grab the existing rule that handles SVG imports
