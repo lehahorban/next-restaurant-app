@@ -19,6 +19,7 @@ const Hero: NextPage = () => {
         свіжу домашню вечерю всього за 15 хвилин.
       </p>
       <button
+        type="button"
         onClick={navigateContacts}
         className="mt-10 w-48 h-14 sm:w-52 sm:h-14 md:w-48 md:h-16 bg-green-700 text-center text-white text-base sm:text-lg md:text-lg rounded-[43px] hover:bg-green-600"
       >

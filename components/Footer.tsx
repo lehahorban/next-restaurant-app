@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 const Footer: NextPage = () => {
   return (
     <Element className="w-full m-auto" name="contacts">
-      <footer className="flex flex-col items-center py-10 px-8 bg-gray-900">
+      <footer className="flex flex-col items-center py-10 bg-gray-900">
         <div className="border-b-2 flex flex-col items-center w-full pb-10">
           <ul className="flex flex-wrap justify-center gap-12 w-3/4">
             <li className="flex flex-col items-center">
@@ -15,6 +15,7 @@ const Footer: NextPage = () => {
                 strokeWidth={1.5}
                 stroke="currentColor"
                 className="w-6 h-6 text-red-500"
+                aria-label="Робочі години"
               >
                 <path
                   strokeLinecap="round"
@@ -36,6 +37,7 @@ const Footer: NextPage = () => {
                 strokeWidth={1.5}
                 stroke="currentColor"
                 className="w-6 h-6 text-red-500"
+                aria-label="Наша адреса"
               >
                 <path
                   strokeLinecap="round"
@@ -57,6 +59,7 @@ const Footer: NextPage = () => {
                 strokeWidth={1.5}
                 stroke="currentColor"
                 className="w-6 h-6 text-red-500"
+                aria-label="Номер телефону"
               >
                 <path
                   strokeLinecap="round"

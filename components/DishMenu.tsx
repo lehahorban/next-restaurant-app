@@ -12,7 +12,7 @@ const DishMenu: NextPage = () => {
             <Image
               className="rounded-t-md"
               src="/images/placeholder1.jpg"
-              alt="dish"
+              alt="Крем суп"
               width={350}
               height={260}
             />
@@ -33,7 +33,7 @@ const DishMenu: NextPage = () => {
               <Image
                 className="rounded-t-md"
                 src="/images/placeholder2.jpg"
-                alt="dish"
+                alt="Салат"
                 width={350}
                 height={260}
               />
@@ -54,7 +54,7 @@ const DishMenu: NextPage = () => {
               <Image
                 className="rounded-t-md"
                 src="/images/placeholder3.jpg"
-                alt="dish"
+                alt="Яєшня"
                 width={350}
                 height={260}
               />
@@ -75,7 +75,7 @@ const DishMenu: NextPage = () => {
               <Image
                 className="rounded-t-md"
                 src="/images/placeholder4.jpg"
-                alt="dish"
+                alt="Салат з тунцем"
                 width={350}
                 height={260}
               />
@@ -96,7 +96,7 @@ const DishMenu: NextPage = () => {
               <Image
                 className="rounded-t-md"
                 src="/images/placeholder5.jpg"
-                alt="dish"
+                alt="Овочевий салат"
                 width={350}
                 height={260}
               />
@@ -117,7 +117,7 @@ const DishMenu: NextPage = () => {
               <Image
                 className="rounded-t-md"
                 src="/images/placeholder6.jpg"
-                alt="dish"
+                alt="Овочевий салат"
                 width={350}
                 height={260}
               />

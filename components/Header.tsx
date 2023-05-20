@@ -17,10 +17,12 @@ const navigation: Data[] = [
 const Header: NextPage = () => {
   return (
     <Element name="home">
-      <header className="w-full fixed top-0 left-0 bg-gray-800 opacity-80 border-b border-opacity-10">
+      <header className="w-full fixed top-0 left-0 z-10 bg-gray-800 opacity-80 border-b border-opacity-10">
         <div className="max-w-screen-2xl flex flex-wrap justify-between items-center m-auto p-4">
           <div className="flex items-center">
-            <p className="text-green-500 text-sm ml-1">HEALTHY SWITCHER</p>
+            <Link to="home" className="text-green-500 text-sm ml-1">
+              HEALTHY SWITCHER
+            </Link>
           </div>
           <nav className="md:flex items-center">
             <ul className="flex justify-between items-center w-full">

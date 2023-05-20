@@ -15,7 +15,7 @@ interface Dish {
 const Slider: NextPage = () => {
   return (
     <Swiper
-      className="w-full max-w-[1300px]"
+      className="w-full max-w-[1200px] z-0 mt-8"
       spaceBetween={50}
       navigation={true}
       breakpoints={{
@@ -34,8 +34,6 @@ const Slider: NextPage = () => {
           slidesPerView: 4,
         },
       }}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       {dishArr.map(({ id, to }: Dish) => (
         <SwiperSlide key={id}>
