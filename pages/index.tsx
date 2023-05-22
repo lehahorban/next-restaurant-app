@@ -11,7 +11,12 @@ const Home = () => (
         name="description"
         content="Смачна їжа, доставка до вашого дому. Ресторан Food Delivered пропонує широкий вибір страв із свіжих інгредієнтів, високу якість обслуговування та швидку доставку. Замовляйте онлайн та насолоджуйтесь нашими смаколиками прямо вдома."
       />
-      <link rel="icon" href="favicon.png" />
+      <link
+        type="image/png"
+        rel="icon"
+        href="/images/favicon.png"
+        sizes="16x16"
+      />
     </Head>
     <div className="max-w-screen-2xl m-auto">
       <Layout />

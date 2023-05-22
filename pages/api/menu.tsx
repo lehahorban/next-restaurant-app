@@ -24,7 +24,7 @@ const menuArr: MenuItem[] = [
     title: "Featured Meal",
     description: "Served with french fries + drink",
     more: "Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...",
-    dish: "Salad",
+    dish: "Olive Salad",
     price: "$12.99",
   },
   {
@@ -33,7 +33,7 @@ const menuArr: MenuItem[] = [
     title: "Featured Meal",
     description: "Served with french fries + drink",
     more: "Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...",
-    dish: "Omelette",
+    dish: "Egg Salad",
     price: "$10.99",
   },
   {
