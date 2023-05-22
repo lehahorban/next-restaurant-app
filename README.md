@@ -1,38 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Опис проекту
+Цей проект є Next.js проектом, ініціалізованим за допомогою npx create-next-app@latest
 
-## Getting Started
+Початок роботи
+Спочатку запустіть сервер розробки:
 
-First, run the development server:
-
-```bash
+bash
+Copy code
 npm run dev
-# or
+
+# або
+
 yarn dev
-# or
+
+# або
+
 pnpm dev
-```
+Відкрийте http://localhost:3000 у вашому браузері, щоб побачити результат.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ви можете редагувати сторінку, змінивши файл pages/index.tsx. Сторінка автоматично оновлюється при редагуванні файлу.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Маршрути API доступні за адресою http://localhost:3000/api/hello. Цей кінцевий пункт можна змінити у файлі pages/api/hello.ts.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Каталог pages/api відображається як /api/\*. Файли у цьому каталозі розглядаються як маршрути API, а не як сторінки React.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+У цьому проекті використовується next/font, яке автоматично оптимізує та завантажує шрифт Montserrat, спеціальний шрифт від Google.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Дізнайтеся більше
+Щоб дізнатися більше про Next.js, використовуйте наступні ресурси:
 
-## Learn More
+Документація Next.js - дізнайтеся про функціонал та API Next.js.
+Вчимося Next.js - інтерактивний навчальний посібник з Next.js.
+Ви також можете переглянути репозиторій Next.js на GitHub - ваші відгуки та внески вітаються!
 
-To learn more about Next.js, take a look at the following resources:
+Розгортання на Vercel
+Найпростіший спосіб розгорнути ваш додаток Next.js - використовувати платформу Vercel від авторів Next.js.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Перегляньте нашу документацію з розгортання Next.js для отримання докладнішої інформації.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Використані технології
 
-## Deploy on Vercel
+Цей проект було зроблено з використанням наступнх технологій:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Next.js - реактивний фреймворк для побудови універсальних React додатків.
+React - JavaScript бібліотека для побудови користувацьких інтерфейсів.
+React Hook Form - бібліотека для роботи з формами в React з використанням хуків.
+React Scroll - бібліотека для реалізації плавної прокрутки на сторінці.
+React Toastify - бібліотека для відображення сповіщень (повідомлень) у веб-додатках.
+Swiper - мобільна та перетягування бібліотека слайдерів.
+Tailwind CSS - утиліта CSS класів для швидкої та простої розробки веб-інтерфейсів.
+TypeScript - типізована версія мови програмування JavaScript.
