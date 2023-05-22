@@ -3,14 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import Image from "next/image";
 import dishArr from "@/pages/api/api";
+import { DishType } from "./DishType";
 import "swiper/css";
 import "swiper/css/navigation";
 SwiperCore.use([Navigation]);
-
-interface Dish {
-  id: number;
-  to: string;
-}
 
 const Slider: NextPage = () => {
   return (
@@ -35,7 +31,7 @@ const Slider: NextPage = () => {
         },
       }}
     >
-      {dishArr.map(({ id, to }: Dish) => (
+      {dishArr.map(({ id, to }: DishType) => (
         <SwiperSlide key={id}>
           <div className="max-w-[250px] min-h-[250px]">
             <Image

@@ -1,13 +1,9 @@
 import { NextPage } from "next";
 import { Link } from "react-scroll";
 import { Element } from "react-scroll";
+import { NavigateType } from "./NavigateType";
 
-interface Data {
-  id: number;
-  title: string;
-  to: string;
-}
-const navigation: Data[] = [
+const navigation: NavigateType[] = [
   { id: 1, title: "Home", to: "home" },
   { id: 2, title: "Menu", to: "menu" },
   { id: 3, title: "About", to: "about" },
@@ -26,7 +22,7 @@ const Header: NextPage = () => {
           </div>
           <nav className="md:flex items-center">
             <ul className="flex justify-between items-center w-full">
-              {navigation.map(({ id, title, to }: Data) => (
+              {navigation.map(({ id, title, to }: NavigateType) => (
                 <li key={id}>
                   <Link
                     activeClass="active"

@@ -1,12 +1,13 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import menuArr, { MenuItem } from "@/pages/api/menu";
+import menuArr from "@/pages/api/menu";
+import { MenuType } from "./MenuType";
 
 const DishList: NextPage = () => {
   return (
     <>
       {menuArr.map(
-        ({ id, to, title, description, more, dish, price }: MenuItem) => (
+        ({ id, to, title, description, more, dish, price }: MenuType) => (
           <li
             key={id}
             className="max-w-[350px] flex flex-col justify-center items-center overflow-hidden relative group"
