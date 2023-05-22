@@ -1,6 +1,6 @@
 import { NextPage } from "next";
-import { Link } from "react-scroll";
-import { Element } from "react-scroll";
+import { Link, Element } from "react-scroll";
+
 import { NavigateType } from "./NavigateType";
 
 const navigation: NavigateType[] = [

@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import Image from "next/image";
+
 import menuArr from "@/pages/api/menu";
 import { MenuType } from "./MenuType";
 

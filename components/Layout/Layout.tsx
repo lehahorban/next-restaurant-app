@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import Image from "next/image";
+
 import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
 

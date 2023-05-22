@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import { Element } from "react-scroll";
+
 import DishList from "../DishList/DishList";
 
 const DishMenu: NextPage = () => {

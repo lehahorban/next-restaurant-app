@@ -1,11 +1,14 @@
 import { NextPage } from "next";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
 import Image from "next/image";
-import dishArr from "@/pages/api/api";
-import { DishType } from "./DishType";
+
+import SwiperCore, { Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+
+import dishArr from "@/pages/api/api";
+import { DishType } from "./DishType";
+
 SwiperCore.use([Navigation]);
 
 const Slider: NextPage = () => {

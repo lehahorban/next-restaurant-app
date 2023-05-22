@@ -1,8 +1,9 @@
 import { NextPage } from "next";
-import { useForm, SubmitHandler } from "react-hook-form";
 import { useRouter } from "next/router";
+import { useForm, SubmitHandler } from "react-hook-form";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 import { FormType } from "./FormType";
 import Input from "../Input/Input";
 
