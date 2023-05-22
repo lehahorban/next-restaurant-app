@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import Slider from "./Slider";
+import Slider from "../Slider/Slider";
 import { Element } from "react-scroll";
 const AboutDish: NextPage = () => {
   return (

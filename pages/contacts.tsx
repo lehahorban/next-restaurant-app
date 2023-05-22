@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/ContactForm/ContactForm";
 import { ToastContainer } from "react-toastify";
 
 const Contacts: NextPage = () => {

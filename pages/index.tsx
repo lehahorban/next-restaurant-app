@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Layout from "@/components/Layout";
-import DishMenu from "@/components/DishMenu";
-import AboutDish from "@/components/AboutDish";
-import Footer from "@/components/Footer";
+import Layout from "@/components/Layout/Layout";
+import DishMenu from "@/components/DishMenu/DishMenu";
+import AboutDish from "@/components/AboutDish/AboutDish";
+import Footer from "@/components/Footer/Footer";
 const Home = () => (
   <>
     <Head>
