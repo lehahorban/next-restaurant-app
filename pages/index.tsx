@@ -12,13 +12,11 @@ const Home = () => (
         content="Смачна їжа, доставка до вашого дому. Ресторан Food Delivered пропонує широкий вибір страв із свіжих інгредієнтів, високу якість обслуговування та швидку доставку. Замовляйте онлайн та насолоджуйтесь нашими смаколиками прямо вдома."
       />
     </Head>
-    <div className="max-w-screen-2xl m-auto">
-      <Layout />
-      <main>
-        <DishMenu />
-        <AboutDish />
-      </main>
-    </div>
+    <Layout />
+    <main className="max-w-screen-2xl m-auto">
+      <DishMenu />
+      <AboutDish />
+    </main>
     <Footer />
   </>
 );
