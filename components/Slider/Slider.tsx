@@ -34,13 +34,13 @@ const Slider: NextPage = () => {
         },
       }}
     >
-      {dishArr.map(({ id, to }: DishType) => (
+      {dishArr.map(({ id, to, dish }: DishType) => (
         <SwiperSlide key={id}>
           <div className="max-w-[250px] min-h-[250px]">
             <Image
               className="w-full h-full object-cover"
               src={`/images/${to}.jpg`}
-              alt="dish"
+              alt={dish}
               fill={true}
             />
           </div>
