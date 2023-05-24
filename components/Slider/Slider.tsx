@@ -15,8 +15,8 @@ import Modal from "../Modal/Modal";
 SwiperCore.use([Navigation]);
 
 const Slider: NextPage = () => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [selectedDish, setSelectedDish] = useState<string | null>("");
+  const [selectedImage, setSelectedImage] = useState<string>("");
+  const [selectedDish, setSelectedDish] = useState<string>("");
   const [selectedPrice, setSelectedPrice] = useState<string | undefined>("");
 
   const handleImageClick = (
@@ -30,7 +30,7 @@ const Slider: NextPage = () => {
   };
 
   const handleCloseModal = () => {
-    setSelectedImage(null);
+    setSelectedImage("");
   };
 
   return (
