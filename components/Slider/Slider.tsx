@@ -32,6 +32,11 @@ const Slider: NextPage = () => {
   const handleCloseModal = () => {
     setSelectedImage("");
   };
+  const handleOverlayClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (event.target === event.currentTarget) {
+      setSelectedImage("");
+    }
+  };
 
   return (
     <>
@@ -79,6 +84,7 @@ const Slider: NextPage = () => {
           handleCloseModal={handleCloseModal}
           selectedDish={selectedDish}
           selectedPrice={selectedPrice}
+          handleOverlayClick={handleOverlayClick}
         />
       )}
     </>

@@ -3,20 +3,24 @@ import Image from "next/image";
 
 interface ModalProps {
   selectedImage: string;
-  handleCloseModal: () => void;
   selectedDish: string;
   selectedPrice: string | undefined;
+  handleCloseModal: () => void;
+  handleOverlayClick: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
 
 const Modal: NextPage<ModalProps> = ({
   selectedImage,
-  handleCloseModal,
   selectedDish,
   selectedPrice,
+  handleCloseModal,
+  handleOverlayClick,
 }) => {
-  console.log(selectedDish);
   return (
-    <div className="fixed inset-0 flex items-center justify-center p-4 bg-black bg-opacity-75 z-50 overlay">
+    <div
+      onClick={handleOverlayClick}
+      className="fixed inset-0 flex items-center justify-center p-4 bg-black bg-opacity-75 z-50"
+    >
       <div className="bg-white p-2 w-[500px]">
         <div className="relative bg-cover bg-center w-full aspect-video">
           <Image
@@ -28,7 +32,7 @@ const Modal: NextPage<ModalProps> = ({
           <button
             type="button"
             onClick={handleCloseModal}
-            className="absolute top-2 right-2 button"
+            className="absolute top-2 right-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
