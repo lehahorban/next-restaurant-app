@@ -63,6 +63,7 @@ const Slider: NextPage = () => {
       >
         {dishArr.map(({ id, to, dish, price }: DishType) => (
           <SwiperSlide
+            className="cursor-pointer"
             key={id}
             onClick={() => handleImageClick(`/images/${to}.jpg`, dish, price)}
           >

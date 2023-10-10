@@ -17,7 +17,10 @@ const Header: NextPage = () => {
         <div className="w-full fixed top-0 left-0 z-10 bg-gray-800 opacity-80 border-b border-opacity-10">
           <div className="max-w-screen-2xl flex flex-wrap justify-between items-center m-auto p-4">
             <div className="flex items-center">
-              <Link to="home" className="text-green-500 text-sm ml-1">
+              <Link
+                to="home"
+                className="text-green-500 text-sm ml-1 cursor-pointer"
+              >
                 HEALTHY SWITCHER
               </Link>
             </div>

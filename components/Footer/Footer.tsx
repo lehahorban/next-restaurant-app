@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Element } from "react-scroll";
+import { Link, Element } from "react-scroll";
 
 const Footer: NextPage = () => {
   return (
@@ -79,7 +79,9 @@ const Footer: NextPage = () => {
             </ul>
           </div>
           <div className="flex flex-col items-center pt-10">
-            <p className="text-green-500 text-base">HEALTHY SWITCHER</p>
+            <Link to="home" className="text-green-500 text-base cursor-pointer">
+              HEALTHY SWITCHER
+            </Link>
             <p className="text-gray-400 text-center">
               © Designed by Yellow Snow. All Rights Reserved.{" "}
             </p>
